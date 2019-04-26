@@ -2,25 +2,36 @@
 
 //nesting????
 
+#mobile-hamburger-icon {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+}
+
 .hero-section {
-  background-image: url("./assets/Screen Shot 2019-04-25 at 9.27.18 PM.png");
+  background-image: url(NOTWORKING);
   //linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),   add prior to url
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  width: 50%; //width seems to default to 100%, but making it 50% does do that
+  width: 100%; //width seems to default to 100%, but making it 50% does do that
   //height: 100%;  //height seems to do nothing
   border: 3px black solid;
 
   .hero-content {
     border: solid 1px blue;
     display: flex;
-    //flex-direction: column;
+    flex-direction: column;
+    width: 50%;
+    //maxwidth ---- ~600
     //justify-content: center;
 
     .hero-cta-container {
+      display: flex;
+      flex-direction: column;
       border: dotted 1px red;
+      padding: 10px;
     }
   }
 }
@@ -30,4 +41,45 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.info-tiles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px dotted blueviolet;
+
+  .info-tile {
+    background: @tiles-background; //working- (its currently white, not all cirlces transparent
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    border-bottom: solid 1px grey;
+    //margin: 0 150px 0 150px;
+    padding: 0 150px 0 150px;
+  }
+}
+
+.features-box {
+  background: @tiles-background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border-radius: 5px;
+  margin: 50px;
+  padding-bottom: 25px;
+}
+
+.cta-bottom {
+  background: coral;
+  padding-bottom: 20px;
+}
+
+.btn {
+  border-radius: 10px;
+  height: 3rem;
+  margin: 10px;
 }
