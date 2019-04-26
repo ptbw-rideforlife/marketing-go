@@ -1,0 +1,33 @@
+//HOME PAGE
+
+//nesting????
+
+.hero-section {
+  background-image: url("./assets/Screen Shot 2019-04-25 at 9.27.18 PM.png");
+  //linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),   add prior to url
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 50%; //width seems to default to 100%, but making it 50% does do that
+  //height: 100%;  //height seems to do nothing
+  border: 3px black solid;
+
+  .hero-content {
+    border: solid 1px blue;
+    display: flex;
+    //flex-direction: column;
+    //justify-content: center;
+
+    .hero-cta-container {
+      border: dotted 1px red;
+    }
+  }
+}
+
+.summary-box {
+  border: solid 1px green;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
