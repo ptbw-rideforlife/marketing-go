@@ -136,6 +136,10 @@ img {
   width: 100%;
   height: auto;
 }
+.footer {
+  text-align: center;
+  background: #f0f0f0;
+}
 strong,
 b {
   color: #646464;
@@ -280,6 +284,7 @@ hr.major {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  text-align: center;
 }
 .info-tiles {
   display: flex;
@@ -302,17 +307,44 @@ hr.major {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: auto;
   border-radius: 5px;
-  margin: 50px;
+  margin: 10px;
   padding-bottom: 25px;
 }
-.cta-bottom {
-  background: coral;
+.features-box .cta-features {
+  background: transparent;
+  border: solid #dddbdb 2px;
   padding-bottom: 20px;
+  text-align: center;
+  vertical-align: center;
+  height: 2.5rem;
+  margin: 10px;
+  border-radius: 5px;
+  width: 350px;
+}
+.cta-bottom {
+  background: #e89980;
+  color: #f9e6df;
+  padding-bottom: 20px;
+  text-align: center;
 }
 .btn {
   border-radius: 10px;
   height: 3rem;
   margin: 10px;
+}
+.signup-holder {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.signup-holder .btn-bottom-cta {
+  border-radius: 10px;
+  height: 3rem;
+  margin: 40px;
+  color: #e89980;
+}
+.signup-holder .input-email {
+  margin: 40px;
 }

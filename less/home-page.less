@@ -41,6 +41,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .info-tiles {
@@ -67,19 +68,51 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: auto;
   border-radius: 5px;
-  margin: 50px;
+  margin: 10px;
   padding-bottom: 25px;
+
+  .cta-features {
+    background: transparent;
+    border: solid rgb(221, 219, 219) 2px;
+    //color: @ctatext;
+    padding-bottom: 20px;
+    text-align: center;
+    vertical-align: center; //does nothing
+    height: 2.5rem;
+    margin: 10px;
+    border-radius: 5px;
+    width: 350px;
+  }
 }
 
 .cta-bottom {
-  background: coral;
+  background: @ctabackground;
+  color: @ctatext;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .btn {
   border-radius: 10px;
   height: 3rem;
   margin: 10px;
+}
+
+.signup-holder {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .btn-bottom-cta {
+    border-radius: 10px;
+    height: 3rem;
+    margin: 40px;
+    color: @ctabackground;
+  }
+
+  .input-email {
+    margin: 40px;
+  }
 }
