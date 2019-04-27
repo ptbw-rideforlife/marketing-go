@@ -23,7 +23,8 @@
     border: solid 1px blue;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
+    text-align: center;
     //maxwidth ---- ~600
     //justify-content: center;
 
@@ -32,6 +33,34 @@
       flex-direction: column;
       border: dotted 1px red;
       padding: 10px;
+
+      .cta-hero-button-signup {
+        background: @body-background;
+        //border: solid rgb(221, 219, 219) 2px;
+        //color: @ctatext;
+        padding-bottom: 20px;
+        text-align: center;
+        vertical-align: center; //does nothing
+        height: 2.5rem;
+        margin: 10px;
+        border-radius: 5px;
+        // width: 350px;   inherit width from .hero-content!
+        //should this button class be a mixin?
+      }
+
+      .cta-hero-button {
+        background: transparent;
+        border: solid rgb(221, 219, 219) 2px;
+        //color: @ctatext;
+        padding-bottom: 20px;
+        text-align: center;
+        vertical-align: center; //does nothing
+        height: 2.5rem;
+        margin: 10px;
+        border-radius: 5px;
+        // width: 350px;   inherit width from .hero-content!
+        //should this button class be a mixin?
+      }
     }
   }
 }
@@ -84,6 +113,7 @@
     margin: 10px;
     border-radius: 5px;
     width: 350px;
+    //should this button class be a mixin?
   }
 }
 
