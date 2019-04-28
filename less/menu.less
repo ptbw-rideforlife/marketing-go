@@ -1,30 +1,43 @@
 .menu-button {
-  position: absolute;
+  position: fixed;
   left: 20px;
   cursor: pointer;
 }
 
 .menu {
-  display: none; //initial state
+  display: block; //initial state  NONE FOR LAMBDA MENUE TOGGLE
   position: fixed;
-  top: 75px;
+  top: 50px; //remove after animation. keeping to get to button
   left: 0px;
-  width: 250px;
+  width: 0px; //js to 250px in toggle
   height: 100vh;
-  background-color: black;
-  border: 1px solid grey;
+  background-color: @menubackground;
+  border: 1px solid rgb(61, 61, 61);
   border-left: none;
   border-bottom: none;
   z-index: 2;
+  transition: 0.5s;
 }
 
 .menu ul li {
   list-style-type: none;
-  font-size: 24px;
+  font-size: 15px;
   padding: 1rem;
   text-align: left;
+  color: @kindacoral; //color here
+  border-bottom: 1px solid grey;
+  transition: 0.3s;
+}
+
+.menu ul li:hover {
+  color: white; // to test
+  //font-weight: 400;
 }
 
 .menu--open {
   display: block;
+}
+
+#page-wrapper {
+  margin-left: 0px;
 }
