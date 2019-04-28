@@ -278,6 +278,9 @@ hr.major {
 .hero-section .hero-content {
   border: solid 1px blue;
   display: flex;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/small-mnt.png");
   flex-direction: column;
   width: 100%;
   text-align: center;
@@ -288,16 +291,11 @@ hr.major {
   border: dotted 1px red;
   padding: 10px;
 }
-.hero-section .hero-content .hero-cta-container .cta-hero-button-signup {
-  background: #f5f5f5;
-  padding-bottom: 20px;
-  text-align: center;
-  vertical-align: center;
-  height: 2.5rem;
-  margin: 10px;
-  border-radius: 5px;
-}
 .hero-section .hero-content .hero-cta-container .cta-hero-button {
+  display: flex;
+  background: #f5f5f5;
+  justify-content: center;
+  align-content: center;
   background: transparent;
   border: solid #dddbdb 2px;
   padding-bottom: 20px;
@@ -375,4 +373,31 @@ hr.major {
 }
 .signup-holder .input-email {
   margin: 40px;
+}
+.menu-button {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+.menu {
+  display: none;
+  position: fixed;
+  top: 75px;
+  left: 0px;
+  width: 250px;
+  height: 100vh;
+  background-color: black;
+  border: 1px solid grey;
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
+}
+.menu ul li {
+  list-style-type: none;
+  font-size: 24px;
+  padding: 1rem;
+  text-align: left;
+}
+.menu--open {
+  display: block;
 }

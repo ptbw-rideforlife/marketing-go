@@ -6,6 +6,7 @@
   position: fixed;
   top: 5px;
   left: 5px;
+  //display: none; // remove none to show burger
 }
 
 .hero-section {
@@ -22,11 +23,13 @@
   .hero-content {
     border: solid 1px blue;
     display: flex;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/small-mnt.png");
     flex-direction: column;
     width: 100%;
-    text-align: center;
+    text-align: center; //should I be flexboxing here?
     //maxwidth ---- ~600
-    //justify-content: center;
 
     .hero-cta-container {
       display: flex;
@@ -34,21 +37,26 @@
       border: dotted 1px red;
       padding: 10px;
 
-      .cta-hero-button-signup {
-        background: @body-background;
-        //border: solid rgb(221, 219, 219) 2px;
-        //color: @ctatext;
-        padding-bottom: 20px;
-        text-align: center;
-        vertical-align: center; //does nothing
-        height: 2.5rem;
-        margin: 10px;
-        border-radius: 5px;
-        // width: 350px;   inherit width from .hero-content!
-        //should this button class be a mixin?
-      }
+      //.signup {
+
+      //border: solid rgb(221, 219, 219) 2px;
+      //color: @ctatext;
+      // padding-bottom: 20px;
+      // text-align: center;
+      // vertical-align: center; //does nothing
+      // height: 2.5rem;
+      // margin: 10px;
+      // border-radius: 5px;
+
+      // width: 350px;   inherit width from .hero-content!
+      //should this button class be a mixin?
+      //}
 
       .cta-hero-button {
+        display: flex;
+        background: @body-background;
+        justify-content: center;
+        align-content: center;
         background: transparent;
         border: solid rgb(221, 219, 219) 2px;
         //color: @ctatext;
