@@ -1,0 +1,157 @@
+//HOME PAGE
+
+//nesting????
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: 3px black solid;
+
+  .hero-content {
+    border: solid 1px blue;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/small-mnt.png");
+    flex-direction: column;
+    width: 100%;
+    text-align: center; //should I be flexboxing here?
+    //color: white;  //does nothing
+    //maxwidth ---- ~600
+
+    @media @tablet {
+      align-items: center;
+    }
+
+    .hero-cta-container {
+      display: flex;
+      flex-direction: column;
+      border: dotted 1px red;
+      padding: 10px;
+
+      @media @tablet {
+        flex-direction: row;
+        justify-content: center;
+        width: 50%; // need to media the buttons not just the box
+      }
+
+      .cta-hero-button {
+        display: flex;
+        background: @body-background;
+        justify-content: center;
+        align-content: center;
+        background: transparent;
+        border: solid rgb(221, 219, 219) 2px;
+        color: white;
+        //color: @ctatext;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        text-align: center; //does nothing
+        vertical-align: center; //does nothing
+        height: 2.75rem;
+        margin: 10px;
+        border-radius: 5px;
+
+        @media @tablet {
+          width: 50%;
+        }
+
+        // &:hover {
+        //   color: darken(teal, 10%);
+        // }
+
+        // width: 350px;   inherit width from .hero-content!
+        //should this button class be a mixin?
+      }
+
+      .signup {
+        background: @softgrey;
+        color: @sexygrey;
+      }
+    }
+  }
+}
+
+.summary-box {
+  border: solid 1px green;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.info-tiles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px dotted blueviolet;
+
+  .info-tile {
+    background: @tiles-background; //working- (its currently white, not all cirlces transparent
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    border-bottom: solid 1px grey;
+    //margin: 0 150px 0 150px;
+    padding: 0 150px 0 150px;
+  }
+}
+
+.features-box {
+  background: @tiles-background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  border-radius: 5px;
+  margin: 10px;
+  padding-bottom: 25px;
+
+  .cta-features {
+    background: transparent;
+    border: solid rgb(221, 219, 219) 2px;
+    //color: @ctatext;
+    padding-bottom: 20px;
+    text-align: center;
+    vertical-align: center; //does nothing
+    height: 2.5rem;
+    margin: 10px;
+    border-radius: 5px;
+    width: 350px;
+    //should this button class be a mixin?
+  }
+}
+
+.cta-bottom {
+  background: @ctabackground;
+  color: @ctatext;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 10px;
+  height: 3rem;
+  margin: 10px;
+}
+
+.signup-holder {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .btn-bottom-cta {
+    border-radius: 10px;
+    height: 3rem;
+    margin: 40px;
+    color: @ctabackground;
+  }
+
+  .input-email {
+    margin: 40px;
+  }
+}

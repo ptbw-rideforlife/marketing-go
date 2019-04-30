@@ -1,17 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Ride For Life _ Landing</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ride For Life _ Landing</title>
+
+    <!--FONT IMPORT-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <!--link css to less-->
+
+    <!--link js-->
+    <script src="./menu.js" async></script>
   </head>
+  <!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
   <body>
-    <div class="page wrapper">
-      <h1>Ride For Life</h1>
-      <img src="./assets/flag.png" alt="uganda flag" />
-      <h2>Get There Safe.</h2>
-      <button>Sign Up Now!</button>
+    <!--////////////////////////NAVIGATION/////////////////////////////////////////////////////////////////////////////-->
+
+    <div id="page-wrapper">
+      <div class="menu-button">
+        <img src="./assets/menu copy.png" alt="cheesburgerssss" />
+      </div>
+
+      <!--  BACKGROUND SHOULD BE <img src="./assets/small-mnt.png" alt="mountains" />  -->
+
+      <div class="menu">
+        <ul>
+          <li>
+            <img
+              class="menu-close-button"
+              src="./assets/close_holder.png"
+              alt="X"
+            />
+          </li>
+          <li>Home</li>
+          <li>Team</li>
+          <li>Sign Up</li>
+        </ul>
+      </div>
+
+      <!--   ORIGINAL MOBILE NAV ATTEMPT
+      <nav class="mobilenav">
+        <a href="">Home</a>
+        <a href="">Team</a>
+        <a href="">Signup</a>
+      </nav>
+      -->
+
+      <!--///////////////////////////HERO//////////////////////////////////////////////////////////////////////////-->
+
+      <section class="hero-section">
+        <!--TRIED TO ADD HERO IMAGE W3 SCHOOLS,  Issues:
+        FILE SIZE AND URL (filepath not reccognized by less)-->
+
+        <div class="hero-content">
+          <h1>RIDE FOR LIFE</h1>
+          <h2>Get there safely.</h2>
+
+          <div class="hero-cta-container">
+            <button class="cta-hero-button signup">Sign Up</button>
+            <button class="cta-hero-button">Learn More</button>
+          </div>
+        </div>
+      </section>
+      <!--///////////////////////////SUMMARY///////////////////////////////////-->
+      <section class="summary-box">
+        <h2>
+          Join the Picki hailing network that saves lives.
+        </h2>
+        <hr />
+        <!--NO STYLING APPEARING-->
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+          aut nulla excepturi a necessitatibus dolorem nostrum impedit iste
+          nesciunt minima?
+        </p>
+        <img
+          src="./assets/uganda_bike_images/cabikes_roadtraffic_signs.jpg"
+          alt="nice-bike-shot-here"
+        />
+      </section>
+
+      <!--////////////////////////////INFO TILES//////////////////////////////////-->
+      <section class="info-tiles">
+        <div class="info-tile">
+          <img src="./assets/Circle holders/red_circ.png" alt="icon1" />
+          <h3>Pregnant Moms</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+            vero.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Tenetur, vero.
+          </p>
+        </div>
+
+        <div class="info-tile">
+          <img src="./assets/Circle holders/blu_circ.png" alt="icon2" />
+          <h3>Drivers</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+            vero.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Tenetur, vero.
+          </p>
+        </div>
+
+        <div class="info-tile">
+          <img src="./assets/Circle holders/green_circ.png" alt="icon3" />
+          <h3>CareGivers</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+            vero.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Tenetur, vero.
+          </p>
+        </div>
+
+        <div class="info-tile">
+          <img src="./assets/Circle holders/tan_circ.png" alt="icon4" />
+          <h3>Community</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+            vero.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Tenetur, vero.
+          </p>
+        </div>
+      </section>
+
+      <hr />
+      <!--/////////////////////////////FEATURES BOXES/////////////////////////////////-->
+
+      <section class="features-box">
+        <img src="./assets/feature holders/ftr1.png" alt="features_1" />
+        <h3>
+          features box 1
+        </h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+          aut nulla excepturi a necessitat it amet consectetur adipisicing elit.
+        </p>
+        <button class="cta-features">feature CTABTN</button>
+      </section>
+
+      <section class="features-box">
+        <img src="./assets/feature holders/ftr2.png" alt="features_2" />
+        <h3>
+          features box 2
+        </h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
+          aut nulla excepturi a necessitat it amet consectetur adipisicing elit.
+        </p>
+        <button class="cta-features">SIGN UP</button>
+      </section>
+
+      <!--////////////////////////////CTA//////////////////////////////////-->
+
+      <section class="cta-bottom">
+        <h2>Keep in touch!!!</h2>
+        <p>SMS Updates to help save lives.</p>
+        <div class="signup-holder">
+          <input class="input-email" type="phone" name="" id="" />
+          <button class="btn-bottom-cta">Sign Up</button>
+        </div>
+      </section>
+
+      <section class="footer">
+        <div class="social-icons">
+          <img
+            src="./assets/feature holders/social-icons-holder.png"
+            alt="insertsocialicons"
+          />
+        </div>
+
+        <!--////////////////////////////////FOOTER//////////////////////////////-->
+
+        <ul class="copyright">
+          <li>Copyright 2019 Ride4Life.</li>
+          <li>All rights reserved.</li>
+        </ul>
+      </section>
+
+      <!--//////////////////////////////////////////////////////////////-->
+
+      <!--<img src="./assets/flag.png" alt="uganda flag" />
+      <h1>MAKE MOUNTAINS THE HERO IMAGE</h1>
+      
+      <img src="./assets/small-mnt.png" alt="mountains" />-->
+
+      <!--<div class="widths">
+        <div class="fivehundred"><h1>500</h1></div>
+        <div class="eighthundred"><h1>800</h1></div>
+        <div class="twelvehundred"><h1>1200</h1></div>
+      </div>-->
     </div>
+    <!--#page-wrapper END-->
   </body>
 </html>
