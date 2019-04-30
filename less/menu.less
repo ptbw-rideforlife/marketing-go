@@ -31,14 +31,15 @@
   transition: 0.3s;
   display: none; //test for display on click
   //works OUT of nested menu but not IN
+}
 
-  .menu-close-button {
-    display: flex; // this should be on menue ul li and only align the x
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 25px; // seems to do nothing. resized in preview, still weird if styling messed up
-    height: auto;
-  }
+.menu-close-button {
+  //display: flex; // this should be on menue ul li and only align the x
+  //flex-direction: row;
+  //justify-content: flex-end;
+  text-align: right;
+  width: 25px; // seems to do nothing. resized in preview, still weird if styling messed up
+  height: auto;
 }
 
 .menu ul li:hover {
@@ -51,6 +52,7 @@
 // }
 
 #page-wrapper {
+  //initial at 0, openMenu()pushes to right
   margin-left: 0px;
   transition: margin-left 0.5s;
 }

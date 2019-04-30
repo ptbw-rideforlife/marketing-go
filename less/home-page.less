@@ -30,6 +30,7 @@
     flex-direction: column;
     width: 100%;
     text-align: center; //should I be flexboxing here?
+    //color: white;  //does nothing
     //maxwidth ---- ~600
 
     .hero-cta-container {
@@ -38,20 +39,9 @@
       border: dotted 1px red;
       padding: 10px;
 
-      //.signup {
-
-      //border: solid rgb(221, 219, 219) 2px;
-      //color: @ctatext;
-      // padding-bottom: 20px;
-      // text-align: center;
-      // vertical-align: center; //does nothing
-      // height: 2.5rem;
-      // margin: 10px;
-      // border-radius: 5px;
-
-      // width: 350px;   inherit width from .hero-content!
-      //should this button class be a mixin?
-      //}
+      //   @media @tablet {
+      //     flex-direction: row;
+      //   }
 
       .cta-hero-button {
         display: flex;
@@ -60,15 +50,26 @@
         align-content: center;
         background: transparent;
         border: solid rgb(221, 219, 219) 2px;
+        color: white;
         //color: @ctatext;
-        padding-bottom: 20px;
-        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        text-align: center; //does nothing
         vertical-align: center; //does nothing
         height: 2.5rem;
         margin: 10px;
         border-radius: 5px;
+
+        // &:hover {
+        //   color: darken(teal, 10%);
+        // }
         // width: 350px;   inherit width from .hero-content!
         //should this button class be a mixin?
+      }
+
+      .signup {
+        background: @softgrey;
+        color: @sexygrey;
       }
     }
   }
