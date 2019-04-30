@@ -7,7 +7,7 @@
 .menu {
   display: block; //initial state  NONE FOR LAMBDA MENU TOGGLE
   position: fixed;
-  top: 50px; //remove after animation. keeping to get to button
+  top: 0px; //remove after animation. keeping to get to button
   left: 0px;
   width: 0px; //js to 250px in toggle
   height: 100vh;
@@ -18,25 +18,6 @@
   z-index: 1; //was 2
   //overflow-x: hidden; disables horozontal scroll
   transition: 0.5s;
-
-  .menu ul li {
-    ///why showing up? nesting in menu makes styles weird.
-    list-style-type: none;
-    font-size: 15px;
-    padding: 1rem;
-    text-align: left;
-    color: @kindacoral; //color here
-    border-bottom: 1px solid grey;
-    transition: 0.3s;
-
-    .menu-close-button {
-      display: flex; // this should be on menue ul li and only align the x
-      flex-direction: row;
-      justify-content: flex-end;
-      width: 25px; // seems to do nothing. resized in preview, still weird if styling messed up
-      height: auto;
-    }
-  }
 }
 
 .menu ul li {
@@ -48,6 +29,8 @@
   color: @kindacoral; //color here
   border-bottom: 1px solid grey;
   transition: 0.3s;
+  display: none; //test for display on click
+  //works OUT of nested menu but not IN
 
   .menu-close-button {
     display: flex; // this should be on menue ul li and only align the x
@@ -63,10 +46,11 @@
   //font-weight: 400;
 }
 
-.menu--open {
-  display: block;
-}
+// .menu--open {                for use w/ lambda version
+//   display: block;
+// }
 
 #page-wrapper {
   margin-left: 0px;
+  transition: margin-left 0.5s;
 }
