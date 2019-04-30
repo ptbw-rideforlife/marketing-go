@@ -2,23 +2,11 @@
 
 //nesting????
 
-// #mobile-hamburger-icon {
-//   position: fixed;
-//   top: 5px;
-//   left: 5px;
-//   //display: none; // remove none to show burger
-// }
-//renamed menu-button and moved to menu.less, and got FUBAR
-
 .hero-section {
-  //background-image: url(NOTWORKING);
-  //linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),   add prior to url
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  width: 100%; //width seems to default to 100%, but making it 50% does do that
-  //height: 100%;  //height seems to do nothing
+  width: 100%;
   border: 3px black solid;
 
   .hero-content {
@@ -33,15 +21,21 @@
     //color: white;  //does nothing
     //maxwidth ---- ~600
 
+    @media @tablet {
+      align-items: center;
+    }
+
     .hero-cta-container {
       display: flex;
       flex-direction: column;
       border: dotted 1px red;
       padding: 10px;
 
-      //   @media @tablet {
-      //     flex-direction: row;
-      //   }
+      @media @tablet {
+        flex-direction: row;
+        justify-content: center;
+        width: 50%; // need to media the buttons not just the box
+      }
 
       .cta-hero-button {
         display: flex;
@@ -56,13 +50,18 @@
         padding-top: 10px;
         text-align: center; //does nothing
         vertical-align: center; //does nothing
-        height: 2.5rem;
+        height: 2.75rem;
         margin: 10px;
         border-radius: 5px;
+
+        @media @tablet {
+          width: 50%;
+        }
 
         // &:hover {
         //   color: darken(teal, 10%);
         // }
+
         // width: 350px;   inherit width from .hero-content!
         //should this button class be a mixin?
       }

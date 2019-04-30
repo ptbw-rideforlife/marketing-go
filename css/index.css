@@ -284,11 +284,23 @@ ul {
   width: 100%;
   text-align: center;
 }
+@media (min-width: 500px) {
+  .hero-section .hero-content {
+    align-items: center;
+  }
+}
 .hero-section .hero-content .hero-cta-container {
   display: flex;
   flex-direction: column;
   border: dotted 1px red;
   padding: 10px;
+}
+@media (min-width: 500px) {
+  .hero-section .hero-content .hero-cta-container {
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+  }
 }
 .hero-section .hero-content .hero-cta-container .cta-hero-button {
   display: flex;
@@ -302,9 +314,14 @@ ul {
   padding-top: 10px;
   text-align: center;
   vertical-align: center;
-  height: 2.5rem;
+  height: 2.75rem;
   margin: 10px;
   border-radius: 5px;
+}
+@media (min-width: 500px) {
+  .hero-section .hero-content .hero-cta-container .cta-hero-button {
+    width: 50%;
+  }
 }
 .hero-section .hero-content .hero-cta-container .signup {
   background: #f5f5f5;
