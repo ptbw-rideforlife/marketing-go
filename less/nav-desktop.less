@@ -1,0 +1,26 @@
+.desktop-nav-holder {
+  display: none;
+
+  @media @desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: transparent;
+    z-index: 1;
+  }
+
+  .desktop-nav-text {
+    display: none;
+  }
+
+  .desktop-nav-actions {
+    display: none;
+
+    @media @desktop {
+      display: flex;
+      flex-direction: row;
+      width: 500px;
+      justify-content: space-between;
+    }
+  }
+}
