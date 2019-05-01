@@ -2,6 +2,10 @@
   position: fixed;
   left: 20px;
   cursor: pointer;
+
+  @media @desktop {
+    display: none;
+  }
 }
 
 .menu {
@@ -26,7 +30,7 @@
   font-size: 15px;
   padding: 1rem;
   text-align: left;
-  color: @kindacoral; //color here
+  color: white; //color here
   border-bottom: 1px solid grey;
   transition: 0.3s;
   display: none; //test for display on click
@@ -43,7 +47,7 @@
 }
 
 .menu ul li:hover {
-  color: white; // to test
+  color: @kindacoral; // to test
   //font-weight: 400;
 }
 
