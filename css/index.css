@@ -340,6 +340,12 @@ ul {
   align-items: center;
   border: 3px dotted blueviolet;
 }
+@media (min-width: 500px) {
+  .info-tiles {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .info-tiles .info-tile {
   background: white;
   display: flex;
@@ -349,6 +355,11 @@ ul {
   border-radius: 5px;
   border-bottom: solid 1px grey;
   padding: 0 150px 0 150px;
+}
+@media (min-width: 500px) {
+  .info-tiles .info-tile {
+    width: 200px;
+  }
 }
 .features-box {
   background: white;
@@ -420,7 +431,7 @@ ul {
   font-size: 15px;
   padding: 1rem;
   text-align: left;
-  color: #e89980;
+  color: white;
   border-bottom: 1px solid grey;
   transition: 0.3s;
   display: none;
@@ -431,7 +442,7 @@ ul {
   height: auto;
 }
 .menu ul li:hover {
-  color: white;
+  color: #e89980;
 }
 #page-wrapper {
   margin-left: 0px;

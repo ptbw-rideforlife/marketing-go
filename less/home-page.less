@@ -88,6 +88,11 @@
   align-items: center;
   border: 3px dotted blueviolet;
 
+  @media @tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .info-tile {
     background: @tiles-background; //working- (its currently white, not all cirlces transparent
     display: flex;
@@ -97,7 +102,12 @@
     border-radius: 5px;
     border-bottom: solid 1px grey;
     //margin: 0 150px 0 150px;
+    //DO EVEN /ODD FOR EFFECTIVE GREY LINE IF NEEDED
     padding: 0 150px 0 150px;
+
+    @media @tablet {
+      width: 200px;
+    }
   }
 }
 
