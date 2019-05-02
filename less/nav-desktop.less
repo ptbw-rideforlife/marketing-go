@@ -1,10 +1,13 @@
 .desktop-nav-holder {
   display: none;
+  border: gold 2px dotted;
+  height: 2em;
 
   @media @desktop {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
     background-color: transparent;
     z-index: 1;
   }
@@ -15,6 +18,43 @@
 
   .desktop-nav-actions {
     display: none;
+
+    @media @desktop {
+      display: flex;
+      flex-direction: row;
+      width: 500px;
+      justify-content: space-between;
+    }
+    // .nav-button {               //styles nav button but HOme and about dissapear
+    //   //display: flex;
+    //   background: @body-background;
+    //   justify-content: center;
+    //   align-content: center;
+    //   background: transparent;
+    //   border: solid rgb(221, 219, 219) 2px;
+    //   color: white;
+    //   font-size: 0.8em;
+    //   //color: @ctatext;
+    //   padding-bottom: 10px;
+    //   padding-top: 10px;
+    //   padding-left: 25px;
+    //   padding-right: 25px;
+    //   text-align: center; //does nothing
+    //   vertical-align: center; //does nothing
+    //   height: 2.75rem;
+    //   width: auto;
+    //   margin: 10px;
+    //   border-radius: 5px;
+
+    //   // &:hover {
+    //   //   color: darken(teal, 10%);
+    //   // }
+    // }
+
+    .signupnav {
+      background: @softgrey;
+      color: @sexygrey;
+    }
 
     @media @desktop {
       display: flex;
