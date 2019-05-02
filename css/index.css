@@ -515,3 +515,62 @@ ul {
   margin-left: 0px;
   transition: margin-left 0.5s;
 }
+.team-hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: 3px black solid;
+}
+.team-hero-section .team-hero-content {
+  border: solid 1px blue;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(to bottom right, #a8d6d6, #565694);
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .team-hero-section .team-hero-content {
+    align-items: center;
+  }
+}
+.team-hero-section .team-hero-content .team-hero-cta-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+@media (min-width: 500px) {
+  .team-hero-section .team-hero-content .team-hero-cta-container {
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+  }
+}
+.team-hero-section .team-hero-content .team-hero-cta-container .cta-hero-button {
+  display: flex;
+  background: #f5f5f5;
+  justify-content: center;
+  align-content: center;
+  background: transparent;
+  border: solid #dddbdb 2px;
+  color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  vertical-align: center;
+  height: 2.75rem;
+  margin: 10px;
+  border-radius: 5px;
+}
+@media (min-width: 500px) {
+  .team-hero-section .team-hero-content .team-hero-cta-container .cta-hero-button {
+    width: 50%;
+  }
+}
+.team-hero-section .team-hero-content .team-hero-cta-container .signup {
+  background: #f5f5f5;
+  color: #2b2b2b;
+}
