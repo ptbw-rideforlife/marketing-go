@@ -236,6 +236,11 @@ ul {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
 .widths {
   border: solid blue 1px;
   width: 100%;
@@ -325,6 +330,9 @@ ul {
   flex-direction: column;
   width: 100%;
   text-align: center;
+}
+.hero-section .hero-content .hero-text {
+  color: #f0f0f0;
 }
 @media (min-width: 500px) {
   .hero-section .hero-content {
