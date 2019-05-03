@@ -7,12 +7,12 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  //border: 3px black solid;
+  border: 3px black solid;
 
   .hero-content {
-    //border: solid 1px blue;
+    border: solid 1px blue;
     display: flex;
-    background-position: center;
+
     background-size: cover;
     background-image: url("../assets/small-mnt.png");
     flex-direction: column;
@@ -34,20 +34,30 @@
 
     .hero-cta-container {
       display: flex;
+      width: 100%;
       flex-direction: column;
-      //border: dotted 1px red;
+      align-items: center;
       padding: 10px;
+      a {
+        width: 100%;
+      }
 
       @media @tablet {
         flex-direction: row;
-        justify-content: center;
-        width: 50%; // need to media the buttons not just the box
+        //justify-content: center;
+        width: 100%; // need to media the buttons not just the box
+        a {
+          width: 70%;
+          margin: 10px 8px;
+        }
       }
 
       .cta-hero-button {
+        margin: 10px auto;
         display: flex;
         background: @body-background;
         justify-content: center;
+        width: 100%;
         align-content: center;
         background: transparent;
         border: solid rgb(221, 219, 219) 2px;
@@ -58,11 +68,11 @@
         text-align: center; //does nothing
         vertical-align: center; //does nothing
         height: 2.75rem;
-        margin: 10px;
+
         border-radius: 5px;
 
         @media @tablet {
-          width: 50%;
+          width: 100%;
         }
 
         // &:hover {
@@ -76,6 +86,9 @@
       .signup {
         background: @softgrey;
         color: @sexygrey;
+      }
+
+      .signuptext {
       }
     }
   }

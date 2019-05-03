@@ -137,6 +137,9 @@ img {
   height: auto;
   object-fit: cover;
 }
+a {
+  text-decoration: none;
+}
 .mobilenav {
   background-color: blueviolet;
 }
@@ -280,57 +283,55 @@ a {
   flex-direction: row;
   justify-content: center;
 }
-.desktop-nav-holder {
+.desktop-nav-holder1 {
   display: none;
-  height: 2em;
-  position: absolute;
-  float: left;
+  height: 40px;
+  position: relative;
 }
 @media (min-width: 800px) {
-  .desktop-nav-holder {
+  .desktop-nav-holder1 {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
     z-index: 1;
   }
 }
-.desktop-nav-holder .desktop-nav-text {
+.desktop-nav-holder1 .desktop-nav-text {
   display: none;
 }
-.desktop-nav-holder .desktop-nav-actions {
+.desktop-nav-holder1 .desktop-nav-actions1 {
   display: none;
 }
 @media (min-width: 800px) {
-  .desktop-nav-holder .desktop-nav-actions {
+  .desktop-nav-holder1 .desktop-nav-actions1 {
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 0 5px;
     display: flex;
+    width: 200px;
     flex-direction: row;
-    width: 500px;
     justify-content: space-between;
   }
 }
-.desktop-nav-holder .desktop-nav-actions .signupnav {
+.desktop-nav-holder1 .desktop-nav-actions1 .signupnav {
   background: #f5f5f5;
   color: #2b2b2b;
-}
-@media (min-width: 800px) {
-  .desktop-nav-holder .desktop-nav-actions {
-    display: flex;
-    flex-direction: row;
-    width: 500px;
-    justify-content: space-between;
-  }
 }
 .hero-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  border: 3px black solid;
 }
 .hero-section .hero-content {
+  border: solid 1px blue;
   display: flex;
-  background-position: center;
   background-size: cover;
   background-image: url("../assets/small-mnt.png");
   flex-direction: column;
@@ -348,20 +349,30 @@ a {
 }
 .hero-section .hero-content .hero-cta-container {
   display: flex;
+  width: 100%;
   flex-direction: column;
+  align-items: center;
   padding: 10px;
+}
+.hero-section .hero-content .hero-cta-container a {
+  width: 100%;
 }
 @media (min-width: 500px) {
   .hero-section .hero-content .hero-cta-container {
     flex-direction: row;
-    justify-content: center;
-    width: 50%;
+    width: 100%;
+  }
+  .hero-section .hero-content .hero-cta-container a {
+    width: 70%;
+    margin: 10px 8px;
   }
 }
 .hero-section .hero-content .hero-cta-container .cta-hero-button {
+  margin: 10px auto;
   display: flex;
   background: #f5f5f5;
   justify-content: center;
+  width: 100%;
   align-content: center;
   background: transparent;
   border: solid #dddbdb 2px;
@@ -371,12 +382,11 @@ a {
   text-align: center;
   vertical-align: center;
   height: 2.75rem;
-  margin: 10px;
   border-radius: 5px;
 }
 @media (min-width: 500px) {
   .hero-section .hero-content .hero-cta-container .cta-hero-button {
-    width: 50%;
+    width: 100%;
   }
 }
 .hero-section .hero-content .hero-cta-container .signup {
@@ -482,8 +492,10 @@ a {
   margin: 40px;
 }
 .menu-button {
-  position: fixed;
+  z-index: 1;
+  width: 50px;
   left: 20px;
+  position: fixed;
   cursor: pointer;
 }
 @media (min-width: 800px) {
@@ -502,7 +514,6 @@ a {
   border: 1px solid #3d3d3d;
   border-left: none;
   border-bottom: none;
-  z-index: 1;
   transition: 0.5s;
 }
 .menu ul li {
