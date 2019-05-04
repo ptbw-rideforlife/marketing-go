@@ -1,6 +1,6 @@
 .desktop-nav-holder1 {
   display: none;
-  height: 40px;
+  height: 60px;
 
   position: relative; //kills flex
 
@@ -16,6 +16,8 @@
     top: 0;
     right: 0;
     z-index: 1;
+    margin: 10px 10px 0 0;
+    //border: dotted red 1px;
   }
 
   .desktop-nav-text {
@@ -26,39 +28,63 @@
     display: none;
 
     @media @desktop {
-      margin-top: 5px;
-      margin-right: 5px;
-      padding: 0 5px;
+      //margin-top: 10px;
+      //margin-right: 10px;
+      //padding: 0 5px;
       display: flex;
-      width: 200px;
+      width: 250px;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
     }
-    // .nav-button {               //styles nav button but HOme and about dissapear
-    //   //display: flex;
-    //   background: @body-background;
-    //   justify-content: center;
-    //   align-content: center;
-    //   background: transparent;
-    //   border: solid rgb(221, 219, 219) 2px;
-    //   color: white;
-    //   font-size: 0.8em;
-    //   //color: @ctatext;
-    //   padding-bottom: 10px;
-    //   padding-top: 10px;
-    //   padding-left: 25px;
-    //   padding-right: 25px;
-    //   text-align: center; //does nothing
-    //   vertical-align: center; //does nothing
-    //   height: 2.75rem;
-    //   width: auto;
-    //   margin: 10px;
-    //   border-radius: 5px;
 
-    //   // &:hover {
-    //   //   color: darken(teal, 10%);
-    //   // }
-    // }
+    a {
+      //eyes bleeding w/Randy copying from hero cta tostyle a tags.
+      //display: flex;
+      //justify-content: center;
+      width: 50%;
+      color: @classygrey;
+      //height: 2.75em; //this was over-riding align items center
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 1.25em;
+      opacity: 70%;
+    }
+    a:hover {
+      color: @sexygrey; ///but why not??: had to re-load live server
+      cursor: pointer;
+    }
+
+    .nav-button {
+      //styles nav button but HOme and about dissapear
+      //display: flex;
+      background: @body-background;
+      //justify-content: center;
+      //align-content: center;
+      background: transparent;
+      border: solid rgb(221, 219, 219) 2px;
+      color: white;
+      font-size: 0.8em;
+      //color: @ctatext;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      //text-align: center; //does nothing
+      //vertical-align: center; //does nothing
+      height: 2.75rem;
+      width: 100px; //auto;
+      //margin: 10px;
+      border-radius: 5px;
+
+      // &:hover {
+      //   color: darken(teal, 10%);
+      // }
+    }
+
+    .nav-button:hover {
+      background-color: @sexygrey; ///but why not??
+      cursor: pointer;
+    }
 
     .signupnav {
       background: @softgrey;
