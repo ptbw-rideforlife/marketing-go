@@ -170,6 +170,8 @@ p {
   margin: 2em;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
+  font-size: 1.25em;
+  line-height: 1.5em;
 }
 h1,
 h2,
@@ -402,6 +404,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
+  justify-content: center;
 }
 .summary-box hr {
   border: 0;
