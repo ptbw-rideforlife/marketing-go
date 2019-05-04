@@ -139,6 +139,7 @@ img {
 }
 a {
   text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .mobilenav {
   background-color: blueviolet;
@@ -167,9 +168,11 @@ i {
   font-style: italic;
 }
 p {
-  margin: 0 0 2em 0;
+  margin: 2em;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
+  font-size: 1.25em;
+  line-height: 1.5em;
 }
 h1,
 h2,
@@ -206,6 +209,7 @@ h3 {
   font-size: 1.75em;
   line-height: 1.5em;
   letter-spacing: -0.025em;
+  padding: 0 0 0 1em;
 }
 h4 {
   font-size: 1.1em;
@@ -285,7 +289,7 @@ a {
 }
 .desktop-nav-holder1 {
   display: none;
-  height: 40px;
+  height: 60px;
   position: relative;
 }
 @media (min-width: 800px) {
@@ -299,6 +303,7 @@ a {
     top: 0;
     right: 0;
     z-index: 1;
+    margin: 10px 10px 0 0;
   }
 }
 .desktop-nav-holder1 .desktop-nav-text {
@@ -309,14 +314,41 @@ a {
 }
 @media (min-width: 800px) {
   .desktop-nav-holder1 .desktop-nav-actions1 {
-    margin-top: 5px;
-    margin-right: 5px;
-    padding: 0 5px;
     display: flex;
-    width: 200px;
+    width: 250px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
+}
+.desktop-nav-holder1 .desktop-nav-actions1 a {
+  width: 50%;
+  color: #f0f0f0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.25em;
+  opacity: 70%;
+}
+.desktop-nav-holder1 .desktop-nav-actions1 a:hover {
+  color: #2b2b2b;
+  cursor: pointer;
+}
+.desktop-nav-holder1 .desktop-nav-actions1 .nav-button {
+  background: #f5f5f5;
+  background: transparent;
+  border: solid #dddbdb 2px;
+  color: white;
+  font-size: 0.8em;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 2.75rem;
+  width: 100px;
+  border-radius: 5px;
+}
+.desktop-nav-holder1 .desktop-nav-actions1 .nav-button:hover {
+  background-color: #2b2b2b;
+  cursor: pointer;
 }
 .desktop-nav-holder1 .desktop-nav-actions1 .signupnav {
   background: #f5f5f5;
@@ -327,10 +359,8 @@ a {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  border: 3px black solid;
 }
 .hero-section .hero-content {
-  border: solid 1px blue;
   display: flex;
   background-size: cover;
   background-image: url("../assets/small-mnt.png");
@@ -355,16 +385,17 @@ a {
   padding: 10px;
 }
 .hero-section .hero-content .hero-cta-container a {
+  display: flex;
   width: 100%;
 }
 @media (min-width: 500px) {
   .hero-section .hero-content .hero-cta-container {
     flex-direction: row;
-    width: 100%;
+    width: 50%;
   }
   .hero-section .hero-content .hero-cta-container a {
-    width: 70%;
-    margin: 10px 8px;
+    width: 100%;
+    margin: 10px 10px;
   }
 }
 .hero-section .hero-content .hero-cta-container .cta-hero-button {
@@ -398,6 +429,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
+  justify-content: center;
 }
 .summary-box hr {
   border: 0;
@@ -553,6 +585,9 @@ a {
   width: 100%;
   text-align: center;
 }
+.team-hero-section .team-hero-content .hero-text {
+  color: #f0f0f0;
+}
 @media (min-width: 500px) {
   .team-hero-section .team-hero-content {
     align-items: center;
@@ -560,14 +595,26 @@ a {
 }
 .team-hero-section .team-hero-content .team-hero-cta-container {
   display: flex;
+  width: 100%;
   flex-direction: column;
+  align-items: center;
   padding: 10px;
+}
+.team-hero-section .team-hero-content .team-hero-cta-container a {
+  display: flex;
+  justify-content: center;
+  width: 50%;
 }
 @media (min-width: 500px) {
   .team-hero-section .team-hero-content .team-hero-cta-container {
     flex-direction: row;
     justify-content: center;
+    width: 100%;
+  }
+  .team-hero-section .team-hero-content .team-hero-cta-container a {
+    display: flex;
     width: 50%;
+    margin: 10px 8px;
   }
 }
 .team-hero-section .team-hero-content .team-hero-cta-container .cta-hero-button {

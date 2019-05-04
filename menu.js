@@ -36,3 +36,6 @@ menuButtonClose.addEventListener("click", () => closeMenu());
 // #menu-close-button
 
 console.log(menuContent);
+console.log(
+  "there are no errors to be found here, but thanks for checking : )"
+);
