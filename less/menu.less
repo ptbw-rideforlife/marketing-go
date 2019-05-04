@@ -1,8 +1,10 @@
 .menu-button {
-  position: fixed;
+  z-index: 1;
+  width: 50px;
   left: 20px;
+  position: fixed;
+  //box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
-
   @media @desktop {
     display: none;
   }
@@ -19,7 +21,7 @@
   border: 1px solid rgb(61, 61, 61);
   border-left: none;
   border-bottom: none;
-  z-index: 1; //was 2
+  //was 2
   //overflow-x: hidden; disables horozontal scroll
   transition: 0.5s;
 }

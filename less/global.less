@@ -14,6 +14,12 @@ body {
 img {
   width: 100%; //100% of PARENT CONTAINER
   height: auto; //keeps aspect ratio
+  object-fit: cover;
+}
+
+a {
+  //attempting to fix link messing with button styling
+  text-decoration: none;
 }
 
 .mobilenav {
@@ -22,6 +28,15 @@ img {
     text-decoration: none;
     background-color: aqua;
   }
+}
+
+.input-email {
+  //width: 25px;
+  height: 4em;
+  opacity: 0.7;
+  padding: 2em;
+  font-family: "Source Sans Pro", sans-serif;
+  //font-size: 1em;
 }
 
 .footer {

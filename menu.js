@@ -6,6 +6,7 @@ const toggleMenu = () => {
 //tutorial versions
 const openMenu = () => {
   menu.style.width = "150px";
+  menuButtonOpen.style.display = "none";
   pageWrapper.style.marginLeft = "150px";
   //document.body.style.backgroundColor = "rgba(0,0,0,0.4)";  opacity needs love
 
@@ -15,6 +16,7 @@ const openMenu = () => {
 
 const closeMenu = () => {
   menu.style.width = "0px";
+  menuButtonOpen.style.display = "flex";
   pageWrapper.style.marginLeft = "0px";
   menuContent.forEach(domElement => (domElement.style.display = "none")); //NOT working
 };

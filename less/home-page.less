@@ -12,7 +12,7 @@
   .hero-content {
     border: solid 1px blue;
     display: flex;
-    background-position: center;
+
     background-size: cover;
     background-image: url("../assets/small-mnt.png");
     flex-direction: column;
@@ -20,6 +20,9 @@
     text-align: center; //should I be flexboxing here?
     //color: white;  //does nothing
     //maxwidth ---- ~600
+    //opacity: 0.75;
+    filter: brightness(85%); //possible to darken?
+    //filter: alpha(opacity=80)
 
     .hero-text {
       color: @classygrey;
@@ -31,20 +34,30 @@
 
     .hero-cta-container {
       display: flex;
+      width: 100%;
       flex-direction: column;
-      border: dotted 1px red;
+      align-items: center;
       padding: 10px;
+      a {
+        width: 100%;
+      }
 
       @media @tablet {
         flex-direction: row;
-        justify-content: center;
-        width: 50%; // need to media the buttons not just the box
+        //justify-content: center;
+        width: 100%; // need to media the buttons not just the box
+        a {
+          width: 70%;
+          margin: 10px 8px;
+        }
       }
 
       .cta-hero-button {
+        margin: 10px auto;
         display: flex;
         background: @body-background;
         justify-content: center;
+        width: 100%;
         align-content: center;
         background: transparent;
         border: solid rgb(221, 219, 219) 2px;
@@ -55,15 +68,15 @@
         text-align: center; //does nothing
         vertical-align: center; //does nothing
         height: 2.75rem;
-        margin: 10px;
+
         border-radius: 5px;
 
         @media @tablet {
-          width: 50%;
+          width: 100%;
         }
 
         // &:hover {
-        //   color: darken(teal, 10%);
+        //   color: darken(teal, 10%);                                  //ADD HOVER EFFECT
         // }
 
         // width: 350px;   inherit width from .hero-content!
@@ -74,12 +87,15 @@
         background: @softgrey;
         color: @sexygrey;
       }
+
+      .signuptext {
+      }
     }
   }
 }
 
 .summary-box {
-  border: solid 1px green;
+  //border: solid 1px green;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -104,7 +120,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px dotted blueviolet;
+  //border: 3px dotted blueviolet;
 
   @media @tablet {
     flex-direction: row;
