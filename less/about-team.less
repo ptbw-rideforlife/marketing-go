@@ -1,3 +1,7 @@
+//HOME PAGE
+
+//nesting????
+
 .team-hero-section {
   display: flex;
   flex-direction: column;
@@ -19,22 +23,41 @@
     width: 100%;
     text-align: center; //should I be flexboxing here?
     //color: white;  //does nothing
-    //maxwidth ---- ~600
 
+    .hero-text {
+      //team hero text???
+      color: @classygrey;
+    }
     @media @tablet {
       align-items: center;
     }
 
     .team-hero-cta-container {
       display: flex;
+      width: 100%; //seems to do nothing
       flex-direction: column;
-      //border: dotted 1px red;
+      align-items: center;
+      border: dotted 1px red;
       padding: 10px;
+
+      a {
+        //eyes bleeding w/Randy
+        display: flex;
+        justify-content: center;
+        width: 50%;
+      }
 
       @media @tablet {
         flex-direction: row;
         justify-content: center;
-        width: 50%; // need to media the buttons not just the box
+        width: 100%; // need to media the buttons not just the box
+        a {
+          //eyes bleeding w/Randy
+          display: flex;
+          //justify-content: center;
+          width: 50%;
+          margin: 10px 8px;
+        }
       }
 
       .cta-hero-button {
