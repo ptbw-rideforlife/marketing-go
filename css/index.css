@@ -475,6 +475,7 @@ a {
 @media (min-width: 800px) {
   .features-boxes {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 .features-box {
